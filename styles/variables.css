@@ -1,1 +1,18 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --font-Inter: "Inter-Variable", sans-serif;
+  --font-Inter-bold: "Inter-Variable-bold", sans-serif;
+  --font-PressStart2P: "PressStart2P", sans-serif;
+  --font-PressStart2P-bold: "PressStart2P-bold", sans-serif;
+  --background-image-theme-light: url(../svg/background.svg),
+    linear-gradient(180deg, #e7e7e7 0%, #1a1a1a 100%);
+  --background-image-theme-dark: linear-gradient(
+    180deg,
+    #007f0c 0%,
+    #004306 100%
+  );
+  --main-color-theme-dark:  #00CC14;
+  --main-color-theme-light: #000000;
+  --background-color-theme-dark:  #FFFFFF;
+  --background-color-theme-light:  #000000;
+}

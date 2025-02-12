@@ -4,3 +4,54 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --font-Inter: "Inter-Variable", sans-serif;
+  --font-Inter-bold: "Inter-Variable-bold", sans-serif;
+  --font-PressStart2P: "PressStart2P", sans-serif;
+  --font-PressStart2P-bold: "PressStart2P-bold", sans-serif;
+  --background-image: url(../svg/background.svg),
+    linear-gradient(180deg, #e7e7e7 0%, #1a1a1a 100%);
+  --background-image-theme-light: url(../svg/background.svg),
+    linear-gradient(180deg, #e7e7e7 0%, #1a1a1a 100%);
+  --background-image-theme-dark: linear-gradient(
+    180deg,
+    #007f0c 0%,
+    #004306 100%
+  );
+  --main-color-theme-dark: color: #00CC14;
+  --main-color-theme-light: color: #000000;
+  --background-color-theme-dark: color: #FFFFFF;
+  --background-color-theme-light: color: #000000;
+}
+
+:root.theme-dark {
+  .page {
+    --background-image: var(--background-image-theme-dark);
+    --main-color: var(--main-color-theme-dark);
+    --background-color: var(----background-color-theme-dark);
+  }
+}
+
+:root.theme-light {
+  .page {
+    --background-image: var(--background-image-theme-light);
+    --main-color: var(--background-image-theme-light);
+    --background-color: var(----background-color-theme-light);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .page {
+    --background-image: var(--background-image-theme-dark);
+    --main-color: var(--main-color-theme-dark);
+    --background-color: var(----background-color-theme-dark);
+  }
+}
+@media (prefers-color-scheme: light) {
+  .page {
+    --background-image: var(--background-image-theme-light);
+    --main-color: var(--background-image-theme-light);
+    --background-color: var(----background-color-theme-light);
+  }
+}
