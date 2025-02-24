@@ -23,6 +23,8 @@
   --main-color-theme-light: #000000;
   --background-color-theme-dark: #ffffff;
   --background-color-theme-light: #000000;
+  --background-color-theme-dark-header: #000000;
+  --background-color-theme-light-header: #ffffff;
 }
 
 :root.theme-dark {
@@ -30,14 +32,16 @@
     --background-image: var(--background-image-theme-dark);
     --main-color: var(--main-color-theme-dark);
     --background-color: var(--background-color-theme-dark);
+    --background-color-header: var(--background-color-theme-dark-header);
   }
 }
 
 :root.theme-light {
   .page {
     --background-image: var(--background-image-theme-light);
-    --main-color: var(--background-image-theme-light);
+    --main-color: var(--main-color-theme-light);
     --background-color: var(--background-color-theme-light);
+    --background-color-header: var(--background-color-theme-light-header);
   }
 }
 
@@ -46,12 +50,14 @@
     --background-image: var(--background-image-theme-dark);
     --main-color: var(--main-color-theme-dark);
     --background-color: var(--background-color-theme-dark);
+    --background-color-header: var(--background-color-theme-dark-header);
   }
 }
 @media (prefers-color-scheme: light) {
   .page {
     --background-image: var(--background-image-theme-light);
-    --main-color: var(--background-image-theme-light);
+    --main-color: var(--main-color-theme-light);
     --background-color: var(--background-color-theme-light);
+    --background-color-header: var(--background-color-theme-light-header);
   }
 }

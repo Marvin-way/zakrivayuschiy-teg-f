@@ -30,17 +30,17 @@
 }
 
 .header {
-  margin: 100px auto auto;
+  margin: 100px auto;
   width: clamp(375px, 80%, 700px);
-  border: 2px solid var(--main-color);
   font-family: var(--font-PressStart2P-bold);
-  background-color: black;
+  background-color: var(--background-color-header);
   color: var(--main-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border: 2px solid var(--main-color);
+  box-sizing: border-box;
 }
 
 .header_title {
@@ -113,8 +113,6 @@
   appearance: none;
 }
 
-.posts-item  {
-  border: 2px solid #00CC14;
+.posts-item {
+  border: 2px solid #00cc14;
 }
-
-

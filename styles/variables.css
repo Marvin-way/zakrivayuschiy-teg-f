@@ -11,9 +11,10 @@
     #007f0c 0%,
     #004306 100%
   );
-  --main-color: #ff5733;
   --main-color-theme-dark:  #00CC14;
   --main-color-theme-light: #000000;
   --background-color-theme-dark:  #FFFFFF;
   --background-color-theme-light:  #000000;
+  --background-color-theme-dark-header:  #000000;
+  --background-color-theme-light-header:  #FFFFFF;
 }
